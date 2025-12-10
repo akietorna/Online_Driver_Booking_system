@@ -1,0 +1,27 @@
+div.Carousel {
+    width: 90vw;
+    height: 90vh;
+    background-image: url("../public/driver3.jpg");
+    background-size: cover;
+    animation-name: mycarousel;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+div.Carousel:hover{
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s ease-out;
+
+}
+
+
+@keyframes mycarousel{
+    0% {background-image: url("../public/driver3.jpg");}
+    33% {background-image: url("../public/driver2.jpg");}
+    66% {background-image: url("../public/driver4.jpeg");}
+    100% {background-image: url("../public/driving1.jpg");}
+}
