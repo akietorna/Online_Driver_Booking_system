@@ -10,22 +10,32 @@ nav {
 
 }
 
+.Arrow {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
 .RegisterDrpdwn{
   background-color: rgb(3, 3, 79);
-  color: white;
   display: none;
   padding:5px 0 20px 5px;
   border-radius: 10px;
-  width: 180px;
+  width: 200px;
   position: absolute;
   margin-top: 10px;
-  text-align: left;
+  margin-left: -20px;
+  list-style-type: none;
+  box-shadow: 2px 2px 5px  rgb(200, 200, 200);
 }
 
-.Others:hover .RegisterDrpdwn {
+
+
+.Register:hover .RegisterDrpdwn {
   display: block;
   font-weight: 400;
 }
+
 
 
 
@@ -34,17 +44,15 @@ nav {
 }
 
 
-a{
+a{ 
   text-decoration: none;
   color: white;
 }
 
-li.Others {
-  float: right;
-}
 
-ul {
-  display: flexbox;
+
+.Navlinks {
+  display: flex;
   list-style-type: none;
   max-width: 80vw;
   margin-left: auto;
@@ -56,10 +64,68 @@ li{
   right: 0;
   margin-top: 0px;
   font-size: 21px;
-  float: left;
   text-decoration: none;
 }
 
-.Others:hover, .Others:active, .Others:visited{
+.Button{
+  padding-top: 12px;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 25px;
+  margin-left: auto;
+  display: none;
+}
+
+div{
+  margin-left: auto;
+}
+
+.Others {
+  display: flex;
+  list-style-type: none;
+}
+
+.Register:hover, .Service:hover, .Other:hover, .Profile:hover{
   font-weight: bold;
+}
+
+@media screen and (max-width:750px) {
+  div .Button{
+    display: block;
+  }
+  .Menu .Others{
+    display: none;
+  }
+
+  .Navlinks{
+    max-width: 90vw;
+  }
+
+  .Close .Others{
+    display: block;
+    background-color: rgb(3, 3, 79);
+    width: 90vw;
+    position: relative;
+    margin-left: -90vw;
+    margin-top: 0px;
+    border-radius: 5px 5px 10px 10px;
+    box-shadow: 3px 3px 3px 3px rgb(200, 200, 200);
+    padding-bottom: 10px;
+  }
+
+  .Register:hover, .Service:hover, .Other:hover, .Profile:hover{
+    border-left: 4px solid white;
+  }
+
+  .Logo{
+    font-weight: bold;
+  }
+
+
+
+  
+  /* .Close .Others{
+
+  } */
 }
